@@ -36,37 +36,37 @@
                   <Font size="48.0" />
                </font>
             </Label>
-            <Label fx:id="o11" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="1">
+            <Label fx:id="o2" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="1">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
-            <Label fx:id="o12" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="2">
+            <Label fx:id="o3" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="2">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
-            <Label fx:id="o13" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.rowIndex="1">
+            <Label fx:id="o4" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.rowIndex="1">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
-            <Label fx:id="o14" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Label fx:id="o5" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
-            <Label fx:id="o15" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Label fx:id="o6" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
-            <Label fx:id="o16" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.rowIndex="2">
+            <Label fx:id="o7" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.rowIndex="2">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
-            <Label fx:id="o17" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Label fx:id="o8" alignment="CENTER" prefHeight="129.0" prefWidth="156.0" text="O" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="48.0" />
                </font>
