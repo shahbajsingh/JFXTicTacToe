@@ -4,8 +4,12 @@ import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
 
 public class TicTacToeController {
+
+    @FXML
+    private GridPane gameGrid;
 
     @FXML
     private JFXButton btn1, btn2, btn3, btn4,
@@ -13,7 +17,8 @@ public class TicTacToeController {
 
     @FXML
     private Label o1, o2, o3, o4, o5, o6, o7,
-    o8, o9, x1, x2, x3, x4, x5, x6, x7, x8, x9;
+    o8, o9, x1, x2, x3, x4, x5, x6, x7, x8, x9,
+    xWins, oWins, gameOver;
 
     private int counter = 0; // turn counter
 
@@ -146,7 +151,37 @@ public class TicTacToeController {
 
     void pushTurn()
     {
+        detectWin();
         counter++;
+    }
+
+    void detectWin()
+    {
+        if((x1.isVisible() && x2.isVisible() && x3.isVisible())
+            || (x4.isVisible() && x5.isVisible() && x6.isVisible())
+            || (x7.isVisible() && x8.isVisible() && x9.isVisible())
+            || (x1.isVisible() && x5.isVisible() && x9.isVisible())
+            || (x3.isVisible() && x5.isVisible() && x7.isVisible())
+            || (x1.isVisible() && x4.isVisible() && x7.isVisible())
+            || (x2.isVisible() && x5.isVisible() && x8.isVisible())
+            || (x3.isVisible() && x6.isVisible() && x9.isVisible()))
+        {
+            xWins.setVisible(true);
+            gameOver.setVisible(true);
+        }
+
+        if((o1.isVisible() && o2.isVisible() && o3.isVisible())
+                || (o4.isVisible() && o5.isVisible() && o6.isVisible())
+                || (o7.isVisible() && o8.isVisible() && o9.isVisible())
+                || (o1.isVisible() && o5.isVisible() && o9.isVisible())
+                || (o3.isVisible() && o5.isVisible() && o7.isVisible())
+                || (o1.isVisible() && o4.isVisible() && o7.isVisible())
+                || (o2.isVisible() && o5.isVisible() && o8.isVisible())
+                || (o3.isVisible() && o6.isVisible() && o9.isVisible()))
+        {
+            oWins.setVisible(true);
+            gameOver.setVisible(true);
+        }
     }
 
 }
