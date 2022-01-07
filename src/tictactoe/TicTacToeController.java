@@ -167,6 +167,7 @@ public class TicTacToeController {
             || (x3.isVisible() && x6.isVisible() && x9.isVisible()))
         {
             xWins.setVisible(true);
+            gameGrid.setVisible(false);
             gameOver.setVisible(true);
         }
 
@@ -180,6 +181,7 @@ public class TicTacToeController {
                 || (o3.isVisible() && o6.isVisible() && o9.isVisible()))
         {
             oWins.setVisible(true);
+            gameGrid.setVisible(false);
             gameOver.setVisible(true);
         }
     }
