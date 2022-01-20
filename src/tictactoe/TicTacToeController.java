@@ -27,121 +27,103 @@ public class TicTacToeController {
     {
         if (event.getSource().equals(btn1))
         {
-            if(isXturn())
-            {
+            if(isXturn()) {
                 x1.setVisible(true);
-            }
-            else
-            {
+            } else {
                 o1.setVisible(true);
             }
 
             pushTurn();
         }
+
         if (event.getSource().equals(btn2))
         {
-            if(isXturn())
-            {
+            if(isXturn()) {
                 x2.setVisible(true);
-            }
-            else
-            {
+            } else {
                 o2.setVisible(true);
             }
 
             pushTurn();
         }
+
         if (event.getSource().equals(btn3))
         {
-            if(isXturn())
-            {
+            if(isXturn()) {
                 x3.setVisible(true);
-            }
-            else
-            {
+            } else {
                 o3.setVisible(true);
             }
 
             pushTurn();
         }
+
         if (event.getSource().equals(btn4))
         {
-            if(isXturn())
-            {
+            if(isXturn()) {
                 x4.setVisible(true);
-            }
-            else
-            {
+            } else {
                 o4.setVisible(true);
             }
 
             pushTurn();
         }
+
         if (event.getSource().equals(btn5))
         {
-            if(isXturn())
-            {
+            if(isXturn()) {
                 x5.setVisible(true);
-            }
-            else
-            {
+            } else {
                 o5.setVisible(true);
             }
 
             pushTurn();
         }
+
         if (event.getSource().equals(btn6))
         {
-            if(isXturn())
-            {
+            if(isXturn()) {
                 x6.setVisible(true);
-            }
-            else
-            {
+            } else {
                 o6.setVisible(true);
             }
 
             pushTurn();
         }
+
         if (event.getSource().equals(btn7))
         {
-            if(isXturn())
-            {
+            if(isXturn()) {
                 x7.setVisible(true);
-            }
-            else
-            {
+            } else {
                 o7.setVisible(true);
             }
 
             pushTurn();
         }
+
         if (event.getSource().equals(btn8))
         {
-            if(isXturn())
-            {
+            if(isXturn()) {
                 x8.setVisible(true);
-            }
-            else
-            {
+            } else {
                 o8.setVisible(true);
             }
 
             pushTurn();
         }
+
         if (event.getSource().equals(btn9))
         {
-            if(isXturn())
-            {
+            if(isXturn()) {
                 x9.setVisible(true);
-            }
-            else
-            {
+            } else {
                 o9.setVisible(true);
             }
 
             pushTurn();
         }
+
     }
 
     boolean isXturn()
@@ -157,7 +139,7 @@ public class TicTacToeController {
 
     void detectWin()
     {
-        if((x1.isVisible() && x2.isVisible() && x3.isVisible())
+        if  ((x1.isVisible() && x2.isVisible() && x3.isVisible())
             || (x4.isVisible() && x5.isVisible() && x6.isVisible())
             || (x7.isVisible() && x8.isVisible() && x9.isVisible())
             || (x1.isVisible() && x5.isVisible() && x9.isVisible())
@@ -171,7 +153,7 @@ public class TicTacToeController {
             gameOver.setVisible(true);
         }
 
-        if((o1.isVisible() && o2.isVisible() && o3.isVisible())
+        if      ((o1.isVisible() && o2.isVisible() && o3.isVisible())
                 || (o4.isVisible() && o5.isVisible() && o6.isVisible())
                 || (o7.isVisible() && o8.isVisible() && o9.isVisible())
                 || (o1.isVisible() && o5.isVisible() && o9.isVisible())
