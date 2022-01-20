@@ -16,11 +16,12 @@ public class Main extends Application {
         primaryStage.setTitle("JFXCalculator");
         primaryStage.setScene(new Scene(root, 500, 500));
         primaryStage.show();
-        primaryStage.setMaxWidth(500);
-        primaryStage.setMaxHeight(525);
 
         primaryStage.setMinWidth(500);
+        primaryStage.setMaxWidth(500);
+
         primaryStage.setMinHeight(525);
+        primaryStage.setMaxHeight(525);
         primaryStage.setResizable(false);
     }
 

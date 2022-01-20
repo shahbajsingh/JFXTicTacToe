@@ -3,8 +3,15 @@ package tictactoe;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class TicTacToeController {
 
@@ -13,7 +20,7 @@ public class TicTacToeController {
 
     @FXML
     private JFXButton btn1, btn2, btn3, btn4,
-    btn5, btn6, btn7, btn8, btn9;
+    btn5, btn6, btn7, btn8, btn9, btnPlayAgain;
 
     @FXML
     private Label o1, o2, o3, o4, o5, o6, o7,
@@ -126,6 +133,21 @@ public class TicTacToeController {
 
     }
 
+    @FXML
+    void handlePlayAgain(ActionEvent event) throws IOException
+    {
+        if(event.getSource().equals(btnPlayAgain))
+        {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("TicTacToePane.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
+    }
+
     boolean isXturn()
     {
         return ((counter % 2) == 0);
@@ -151,6 +173,7 @@ public class TicTacToeController {
             xWins.setVisible(true);
             gameGrid.setVisible(false);
             gameOver.setVisible(true);
+            btnPlayAgain.setVisible(true);
         }
 
         if      ((o1.isVisible() && o2.isVisible() && o3.isVisible())
@@ -165,6 +188,7 @@ public class TicTacToeController {
             oWins.setVisible(true);
             gameGrid.setVisible(false);
             gameOver.setVisible(true);
+            btnPlayAgain.setVisible(true);
         }
     }
 
